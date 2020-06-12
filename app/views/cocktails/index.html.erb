@@ -1,2 +1,10 @@
+<h1>All my cockatils</h1>
 
-<h1>gkjhg</h1>
+
+<% @cocktails.each do |cocktail| %>
+  <%= cocktail.name %>
+  <%= link_to "see more", cocktail_path(cocktail)  %>
+  <br>
+<% end %>
+
+
